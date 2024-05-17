@@ -11,7 +11,8 @@ This follows the steps outlined in [OSTEP Projects](https://github.com/remzi-arp
 3. Configure and build qemu [Qemu Build System](https://www.qemu.org/docs/master/devel/build-system.html)
 
 ### Quick Start for Qemu
-Introduction [qemu.org](https://www.qemu.org/docs/master/system/introduction.html#running)
+Introduction: [Qemu Instructions](https://www.qemu.org/docs/master/system/introduction.html#running)
+
 A generic form of a QEMU command line
 
 ```
