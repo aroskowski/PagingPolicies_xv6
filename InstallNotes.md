@@ -8,25 +8,29 @@ This project uses qemu as an emulator for the virtual machine. The base OS used 
 ### Quick Start for Qemu
 Introduction [qemu.org](https://www.qemu.org/docs/master/system/introduction.html#running)
 A generic form of a QEMU command line
-`$ qemu-system-x86_64 [machine opts] \
+
+``` $ qemu-system-x86_64 [machine opts] \
                 [cpu opts] \
                 [accelerator opts] \
                 [device opts] \
                 [backend opts] \
                 [interface opts] \
-                [boot opts]`
+                [boot opts]
+```
                 
 Note: examples of the 'help' command for qemu include
 `$ qemu-system-x86_64 -M help` & `$ qemu-system-x86_64 -device scsi-hd,help`
 
 Specific Explanation from [Drew DeVault: Getting Started](https://drewdevault.com/2018/09/10/Getting-started-with-qemu.html)
-`$ qemu-system-x86_64 \
+```
+$ qemu-system-x86_64 \
     -enable-kvm \
     -m 2048 \
     -nic user,model=virtio \
     -drive file=alpine.qcow2,media=disk,if=virtio \
     -cdrom alpine-standard-3.8.0-x86_64.iso \
-    -sdl `
+    -sdl
+```
 - enable-kvm: This enables use of the KVM (kernel virtual machine) subsystem to use hardware accelerated virtualisation on Linux hosts.
 
 - m 2048: This specifies 2048M (2G) of RAM to provide to the guest.
