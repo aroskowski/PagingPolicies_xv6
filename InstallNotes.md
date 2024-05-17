@@ -4,6 +4,11 @@ This project uses qemu as an emulator for the virtual machine. The base OS used 
 
 ## Install Qemu
 **still trying to figure this one out myself**
+This follows the steps outlined in [OSTEP Projects](https://github.com/remzi-arpacidusseau/ostep-projects/blob/master/INSTALL-xv6.md) which only provides instructions for MacOS and use [xv6-public](https://github.com/mit-pdos/xv6-public) which uses x86 architecture. 
+
+1. Download qemu for your operating system. [Qemu Download](https://www.qemu.org/download)
+2. Have your cross compiler?
+3. Configure and build qemu [Qemu Build System](https://www.qemu.org/docs/master/devel/build-system.html)
 
 ### Quick Start for Qemu
 Introduction [qemu.org](https://www.qemu.org/docs/master/system/introduction.html#running)
