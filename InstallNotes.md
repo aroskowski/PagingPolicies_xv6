@@ -1,15 +1,16 @@
 # Installation Guide
 This project uses qemu as an emulator for the virtual machine. The base OS used is xv6 for RISC-V architecture which is available here [xv6-riscv](https://github.com/mit-pdos/xv6-riscv)
-** What cross-compilers are needed? ** 
+**What cross-compilers are needed?** 
 
 ## Install Qemu
-** still trying to figure this one out myself **
+**still trying to figure this one out myself**
 
 ### Quick Start for Qemu
 Introduction [qemu.org](https://www.qemu.org/docs/master/system/introduction.html#running)
 A generic form of a QEMU command line
 
-``` $ qemu-system-x86_64 [machine opts] \
+```
+$ qemu-system-x86_64 [machine opts] \
                 [cpu opts] \
                 [accelerator opts] \
                 [device opts] \
