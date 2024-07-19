@@ -9,8 +9,10 @@ This follows the steps outlined in [OSTEP Projects](https://github.com/remzi-arp
 
 1. Download qemu for your operating system. [Qemu Download](https://www.qemu.org/download). For me (WSL Ubuntu 22.04.3 LTS) the command was ```sudo apt-get update && sudo apt-get install git nasm build-essential qemu gdb```
 2. Download necessary source code, for this project this is the [xv6-riscv](https://github.com/mit-pdos/xv6-riscv?tab=readme-ov-file). Do this using git with ``` git clone https://github.com/mit-pdos/xv6-riscv.git```
-3. Download neccessary toolchains. The RISCV archetechture for this project requires the [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain). Instructions are included on their webpage in more detail. I used ```sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev``` to download the prerequisits (**Note**: While not explicitly necessary, it's a good idea to update first with  ```sudo apt update```)
-4. Configure and build qemu [Qemu Build System](https://www.qemu.org/docs/master/devel/build-system.html)
+3. Download neccessary toolchains. The RISCV archetechture for this project requires the [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain). Instructions are included on their webpage in more detail. Below is a list of the specific commands I had to use. 
+  1.  Install the prerequisists: ```sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev```  **Note**: While not explicitly necessary, it's a good idea to update first with  ```sudo apt update``` and forgetting this can be the cause of some error messages.
+  2.  Install the toolchain itself: ```pain```
+5. Configure and build qemu [Qemu Build System](https://www.qemu.org/docs/master/devel/build-system.html)
 
 ### Quick Start for Qemu
 Introduction: [Qemu Instructions](https://www.qemu.org/docs/master/system/introduction.html#running)
